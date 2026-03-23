@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bine Ati Venit</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460, #533483);
+            background-size: 400% 400%;
+            animation: gradientShift 8s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0%   { background-position: 0% 50%; }
+            50%  { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            text-align: center;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            background: linear-gradient(90deg, #f9d423, #ff4e50, #fc913a, #f9d423);
+            background-size: 300% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: textShine 4s linear infinite;
+            text-shadow: none;
+            padding: 20px 40px;
+        }
+
+        @keyframes textShine {
+            0%   { background-position: 0% center; }
+            100% { background-position: 300% center; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Bine Ati Venit La Curs !!!</h1>
+</body>
+</html>
